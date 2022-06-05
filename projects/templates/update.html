@@ -1,0 +1,12 @@
+<h1>Update Project</h1>
+
+<form action="update_record/{{ project.id }}" method="post">
+{% csrf_token %}
+Name:<br>
+<input name="name" value="{{ project.name }}">
+<br><br>
+Link:<br>
+<input name="link" value="{{ project.link }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>
